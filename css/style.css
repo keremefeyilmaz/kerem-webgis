@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #243247;
+}
+
+header {
+    background-color: #17365d;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #80caff;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #2866a5;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #2866a5;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #17365d;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+/* TECHNOLOGIES PAGE */
+
+.technologies-page {
+    min-height: 75vh;
+    padding: 60px 8%;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+.technologies-page h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.technologies-page p {
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid #e2e7ef;
+    text-align: center;
+}
+
+th {
+    background-color: #17365d;
+    color: white;
+}
+
+td img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+tbody tr:hover {
+    background-color: #edf5ff;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 700px) {
+    .technologies-page {
+        padding: 35px 4%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+/* MAPS PAGE */
+
+.maps-page {
+    padding: 50px 8%;
+    text-align: center;
+    min-height: 75vh;
+}
+
+.maps-page h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.maps-page p {
+    margin-bottom: 30px;
+}
+
+.maps-page h2 {
+    margin-bottom: 20px;
+    color: #2866a5;
+}
+
+#openlayers-map {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #dce5f0;
+    margin-bottom: 30px;
+}
+
+/* LEAFLET MAP */
+
+#leaflet-map {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #dce5f0;
+    margin-bottom: 30px;
+}
+
+.maps-page h2:not(:first-child) {
+    margin-top: 30px;
+}
