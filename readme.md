@@ -54,8 +54,7 @@ The main topics learned with AI assistance include:
 - Preventing repeated world copies in web maps.
 - Understanding GitHub repositories, commits, and GitHub Pages deployment.
 
-**Estimated total AI usage:** [Enter actual estimated time in hours or minutes]
-
+**Estimated total AI usage:** Estimated total AI usage: Approximately 3 hours.
 ## Hosting
 
 The project is hosted using GitHub Pages.
